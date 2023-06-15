@@ -1,0 +1,175 @@
+/* 
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  max-width: 144rem;
+  height: 100vh;
+
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.grid {
+  max-width: 630rem;
+  width: 600px;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.product-img {
+  max-width: 100%;
+}
+
+.container-body {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  padding: 2rem;
+}
+
+.head {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 48%);
+
+  font-weight: 500;
+}
+
+.type {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  color: hsl(212, 21%, 14%);
+  line-height: 1em;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.6em;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.price-1 {
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", sans-serif;
+}
+
+.price-2 {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8rem;
+}
+
+.cta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+
+  color: #fff;
+  background-color: hsl(158, 36%, 37%);
+  padding: 0.7rem 4.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(158, 37%, 19%);
+  transition: all 0.5s;
+}
+
+.cta img {
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25rem;
+    height: 42rem;
+  }
+
+  .container-img img {
+    content: url("./images/image-product-mobile.jpg");
+  }
+  .head {
+    margin-bottom: 1rem;
+  }
+  .type {
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .price {
+    margin-bottom: 1rem;
+  }
+
+  .cta {
+    padding: 0.7rem 7.4rem;
+  }
+}
