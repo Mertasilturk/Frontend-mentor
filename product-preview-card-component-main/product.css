@@ -152,7 +152,7 @@ button:hover {
   }
 
   .container-img img {
-    content: url("./images/image-product-mobile.jpg");
+    content: url("../images/image-product-mobile.jpg");
   }
   .head {
     margin-bottom: 1rem;
