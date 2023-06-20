@@ -1,0 +1,173 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
+
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+picture,
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  align-content: center;
+  min-height: 100vh;
+  max-width: 144rem;
+  margin: 0 auto;
+  font-family: "poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: hsl(234, 12%, 34%);
+  padding: 0 4rem;
+}
+.header-1 {
+  margin-bottom: 1rem;
+}
+.header-2 {
+  font-weight: 200;
+  font-size: clamp(1.2rem, 5vw, 2.2rem);
+}
+.header-3 {
+  font-size: clamp(1.2rem, 5vw, 2.2rem);
+}
+.header-4 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  color: hsl(229, 6%, 46%);
+  line-height: 1.4rem;
+  max-width: 33.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "a d c";
+  align-items: center;
+  justify-items: center;
+
+  gap: 1.8rem;
+  padding: 0 13rem;
+}
+
+.box-1 {
+  grid-area: a;
+}
+
+.box-2 {
+  grid-area: b;
+}
+
+.box-3 {
+  grid-area: c;
+}
+
+.box-4 {
+  grid-area: d;
+}
+
+.box {
+  max-width: 22rem;
+  display: grid;
+  box-shadow: 0 1rem 1.5rem -0.5rem hsla(212, 36%, 64%, 0.4);
+  border-top: 4px solid hsl(180, 62%, 55%);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  gap: 0.5rem;
+}
+
+.box-head {
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  color: hsl(234, 12%, 34%);
+}
+
+.box-p {
+  color: hsl(234, 12%, 34%);
+}
+
+.img {
+  justify-self: end;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 55rem) {
+  .container {
+    grid-template-areas:
+      "a b"
+      "c d";
+    padding: 0 7rem;
+  }
+  .box {
+    min-height: 16rem;
+    padding: 1.5rem;
+  }
+  .img {
+    max-width: 20%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 38rem) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+  .img {
+    max-width: 13%;
+    margin-top: 0.5rem;
+  }
+  .box {
+    min-height: 14rem;
+    padding: 1.5rem;
+  }
+}
