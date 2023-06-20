@@ -96,7 +96,7 @@ body {
   justify-items: center;
 
   gap: 1.8rem;
-  padding: 0 13rem;
+  padding: 0 9rem;
 }
 
 .box-1 {
@@ -120,7 +120,7 @@ body {
 }
 
 .box {
-  max-width: 22rem;
+  max-width: 24rem;
   display: grid;
   box-shadow: 0 1rem 1.5rem -0.5rem hsla(212, 36%, 64%, 0.4);
 
