@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://interactive-price-project.netlify.app/)
+- Live Site URL: https://interactive-price-project.netlify.app/
 
 ## My process
 
