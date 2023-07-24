@@ -30,4 +30,4 @@ Users should be able to:
 ![](./images/mobil1.JPG)
 ![](./images/desktop1.JPG)
 
-- Live Site URL: [Add live site URL here](https://frontendmentor-product.netlify.app/)
+- Live Site URL: https://frontendmentor-product.netlify.app/
