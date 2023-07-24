@@ -18,8 +18,10 @@ function update() {
   const priceCount = priceCost[range.value - 1].toFixed(2);
   const discountPrice = priceCost[range.value - 1] * 0.75 * 12;
   const count = range.value == 5 ? "M" : "K";
-  pricingMedia.innerHTML = bill.checked ? discountPrice : priceCount;
-  price.innerHTML = bill.checked ? discountPrice : priceCount;
+  pricingMedia.innerHTML = bill.checked
+    ? `$${discountPrice}`
+    : ` $${priceCount}`;
+  price.innerHTML = bill.checked ? `$${discountPrice}` : ` $${priceCount}`;
 
   views.innerHTML = `${pageviews[range.value - 1]}${count}`;
 }

@@ -31,7 +31,7 @@
 }
 
 body {
-  background-image: url("/interactive-pricing-component-main/images/bg-pattern.svg");
+  background-image: url("/interactive-pricing-component-mainn/images/bg-pattern.svg");
   background-repeat: no-repeat;
   font-family: "Manrope", sans-serif;
 
@@ -50,7 +50,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/interactive-pricing-component-main/images/pattern-circles.svg");
+  background-image: url("/interactive-pricing-component-mainn/images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 9rem;
