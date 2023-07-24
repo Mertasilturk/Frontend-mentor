@@ -26,7 +26,7 @@ Users should be able to:
 ![](./images/desktop.JPG)
 ![](./images/mobile.JPG)
 
-- Live Site URL: [https://advice-generator-project.netlify.app/]
+- Live Site URL: https://advice-generator-project1.netlify.app/
 
 ## My process
 
