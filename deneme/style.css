@@ -1,4 +1,0 @@
-.dekorlu-dugme::before {
-  content: "➤"; /* Unicode ok karakteri */
-  margin-left: 5px;
-}
