@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <header>
+    <nav class=>
+      <div class="nav-container">
+        <div class="nav-left">
+          
+          <img
+            src="./images/icon-menu.svg"
+            id="menu-btn"
+            alt="menu"
+            class="nav-menu hidden mobile-visible  "
+          />
+          <img src="./images/logo.svg" alt="logo" class="nav-logo" />
+          <div class="overlay "></div>
+          <ul class="nav-links mobile-hidden  ">
+            <img
+              src="./images/icon-close.svg"
+              alt="close"
+              class="close-btn hidden mobile-visible"
+            />
+            <li class="nav-link"><a href="#Colletions">Collections</a></li>
+            <li class="nav-link"><a href="#Men">Men</a></li>
+            <li class="nav-link"><a href="#Women">Women</a></li>
+            <li class="nav-link"><a href="#About">About</a></li>
+            <li class="nav-link"><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <!-- Cart -->
+          <div class="cart-container">
+            <button class="cart-btn">
+              <span class="indicator hidden"></span>
+              <img src="./images/icon-cart.svg" alt="cart" class="cart" />
+            </button>
+            <div class="cart-box hidden">
+              <p class="cart-heading">Cart</p>
+              <div class="line"></div>
+              <div class="cart-content ">
+                <p class="cart-empty padding">Your cart is empty</p>
+              </div>
+            </div>
+          </div>
+          <img src="./images/image-avatar.png" alt="avatar" class="avatar" />
+        </div>
+      </div>
+    </nav> 
+  </header>
+  
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="img-container">
+          <img
+            src="./images/image-product-1.jpg"
+            alt="product"
+            class="main-img"
+          />
+          <div class="mobile-previous mobile-visible">
+            <img src="images/icon-previous.svg" alt="previous product" />
+          </div>
+
+          <div class="mobile-next mobile-visible">
+            <img src="images/icon-next.svg" alt="next product" />
+          </div>
+
+          <div class="preview mobile-hidden">
+            <img
+              class="preview-img"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="image"
+              data-id=1
+            />
+            <img
+              class="preview-img"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="image"
+              data-id=2
+            />
+            <img
+              class="preview-img"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="image"
+              data-id=3
+            />
+            <img
+              class="preview-img"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="image"
+              data-id=4
+            />
+          </div>
+        </div>
+        <div class="content-container">
+          <p class="company">SNEAKER COMPANY</p>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="info">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="new-price">
+              <p class="now">$125.00</p>
+              <span class="discount">50%</span>
+            </div>
+            <p class="old-price">$250.00</p>
+          </div>
+          <div class="buttons">
+            <div class="amount-btn">
+              <button class="minus">
+                <img src="./images/icon-minus.svg" alt="minus" />
+              </button>
+              <p class="amount">0</p>
+              <button class="plus">
+                <img src="./images/icon-plus.svg" alt="plus" />
+              </button>
+            </div>
+            <button class="add-cart-btn">
+              <img src="./images/icon-cart.svg" alt="cart" class="cart-img" />
+              <p class="cart-text">Add to cart</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    
+    <div class="click-img hidden">
+      <div class="slider">
+        <button class="close-slider">
+          <img src="./images/icon-close.svg" alt="close" class="close-btn" />
+        </button>
+        <img
+          src="./images/image-product-1.jpg"
+          class="click-image-src"
+          alt="product"
+        />
+        <button class="next">
+          <img src="./images/icon-next.svg" alt="next" class="next-img" />
+        </button>
+        <button class="previous">
+          <img src="./images/icon-previous.svg" alt="previos" class="previous-img" />
+        </button>
+      </div>
+      <div class="preview">
+        <img
+          class="preview-img "
+          src="./images/image-product-1-thumbnail.jpg"
+          alt="image"
+          data-id=1
+        />
+        <img
+          class="preview-img "
+          src="./images/image-product-2-thumbnail.jpg"
+          alt="image"
+          data-id=2
+        />
+        <img
+          class="preview-img "
+          src="./images/image-product-3-thumbnail.jpg"
+          alt="image"
+          data-id=3
+        />
+        <img
+          class="preview-img "
+          src="./images/image-product-4-thumbnail.jpg"
+          alt="image"
+          data-id=4
+        />
+      </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
