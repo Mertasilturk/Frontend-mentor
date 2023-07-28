@@ -32,8 +32,7 @@ Users should be able to:
 ![](./images/mobile.JPG)
 ![](./images/mobile-navbar.JPG)
 
-- Solution URL:
-- Live Site URL:
+- Live Site URL:https://ecommerce-project-site.netlify.app/
 
 ## My process
 
