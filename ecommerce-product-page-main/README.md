@@ -26,10 +26,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/desktop.JPG.jpg)
-![](./images/desktop-slider.JPG.jpg)
-![](./images/desktop-addcart.JPG.jpg)
-![](./images/mobile.JPG.jpg)
+![](./images/desktop.JPG.)
+![](./images/desktop-slider.JPG.)
+![](./images/desktop-addcart.JPG.)
+![](./images/mobile.JPG.)
 ![](./images/mobile-navbar.JPG)
 
 - Solution URL:
