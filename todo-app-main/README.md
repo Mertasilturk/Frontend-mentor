@@ -32,7 +32,7 @@ Users should be able to:
 ![](./images/desktop-light.JPG)
 ![](./images/mobil.JPG)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://frontend-mentor-todo-app-project.netlify.app/
 
 ## My process
 
