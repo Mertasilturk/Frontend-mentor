@@ -1,0 +1,330 @@
+/* ### Primary
+
+- Bright Blue: hsl(220, 98%, 61%)
+- Check Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
+
+### Neutral
+
+### Light Theme
+
+- Very Light Gray: hsl(0, 0%, 98%)
+- Very Light Grayish Blue: hsl(236, 33%, 92%)
+- Light Grayish Blue: hsl(233, 11%, 84%)
+- Dark Grayish Blue: hsl(236, 9%, 61%)
+- Very Dark Grayish Blue: hsl(235, 19%, 35%)
+
+### Dark Theme
+
+- Very Dark Blue: hsl(235, 21%, 11%)
+- Very Dark Desaturated Blue: hsl(235, 24%, 19%)
+- Light Grayish Blue: hsl(234, 39%, 85%)
+- Light Grayish Blue (hover): hsl(236, 33%, 92%)
+- Dark Grayish Blue: hsl(234, 11%, 52%)
+- Very Dark Grayish Blue: hsl(233, 14%, 35%)
+- Very Dark Grayish Blue: hsl(237, 14%, 26%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: 400, 700 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 62.5%;
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+}
+[data-theme="Light"] {
+  background-image: url("./images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+[data-theme="Dark"] {
+  background-image: url("./images/bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(235, 21%, 11%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 540px;
+  max-width: 540px;
+}
+
+.header {
+  display: flex;
+  gap: 19rem;
+  margin-bottom: 2rem;
+}
+
+.headline {
+  font-size: 2.5rem;
+  letter-spacing: 15px;
+  color: white;
+}
+
+.toggle-mode {
+  border: none;
+  background: transparent;
+}
+
+.todo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  padding: 1.1rem 1.3rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="Dark"] .todo-section {
+  background-color: hsl(235, 24%, 19%);
+}
+
+[data-theme="Light"] .todo-section {
+  background-color: white;
+}
+.todo-circle {
+  position: relative;
+  border: 1px solid hsl(234, 11%, 52%);
+  border-radius: 50%;
+
+  background: transparent;
+  width: 24px;
+  height: 24px;
+}
+
+.todo-input {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  flex: 1;
+  outline: none;
+  caret-color: hsl(234, 11%, 52%);
+  color: hsl(234, 39%, 85%);
+}
+[data-theme="Dark"] .todo-input {
+  color: hsl(234, 11%, 52%);
+}
+
+[data-theme="Light"] .todo-input {
+  color: hsl(235, 24%, 19%);
+}
+
+.todo-input::placeholder {
+  color: hsl(234, 39%, 85%);
+}
+
+.todo-tools-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1.2rem 1.3rem;
+
+  font-size: 1rem;
+  color: hsl(234, 11%, 52%);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="Dark"] .todo-tools-container {
+  background-color: hsl(235, 24%, 19%);
+  border-bottom: solid hsl(237, 14%, 26%);
+}
+[data-theme="Light"].todo-tools-container {
+  background-color: white;
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+}
+
+.items-left {
+  display: flex;
+  gap: 0.3rem;
+  margin-right: 2rem;
+}
+
+.todo-tools {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+
+.todo-three-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-tools-all,
+.todo-tools-active,
+.todo-tools-completed,
+.todo-tools-clear,
+.toggle-img:hover {
+  cursor: pointer;
+}
+
+.todo-tools-active:hover {
+  color: hsl(236, 33%, 92%);
+}
+.todo-tools-all:hover {
+  color: hsl(236, 33%, 92%);
+}
+.todo-tools-completed:hover {
+  color: hsl(236, 33%, 92%);
+}
+.todo-tools-clear:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.todo-list-add {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.1rem 1.3rem;
+  background-color: hsl(235, 24%, 19%);
+
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.todo-list-add:last-child {
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
+}
+[data-theme="Dark"] .todo-list-add {
+  background-color: hsl(235, 24%, 19%);
+}
+[data-theme="Light"] .todo-list-add {
+  background-color: white;
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+}
+
+[data-theme="Dark"] .todo-list-text {
+  color: hsl(234, 39%, 85%);
+}
+[data-theme="Light"] .todo-list-text {
+  color: hsl(235, 24%, 19%);
+}
+
+.todo-list-text {
+  font-size: 1.1rem;
+  color: hsl(234, 39%, 85%);
+  font-weight: 400;
+  max-width: 22rem; /* Set the width as needed */
+  word-wrap: break-word;
+  flex: 1;
+}
+
+.btn-delete {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+.todo-list-add:hover .btn-delete {
+  display: block;
+}
+
+.icon-check {
+  position: absolute;
+  left: -2px;
+  top: -1px;
+  padding: 0.45rem 0.4rem;
+
+  border: 1px solid #e3e4f1;
+  border-radius: 50%;
+
+  background: linear-gradient(
+    to right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+}
+
+.icon-check:hover {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+.active {
+  text-decoration: line-through;
+}
+
+@media (max-width: 590px) {
+  [data-theme="Dark"] {
+    background-image: url("./images/bg-mobile-dark.jpg");
+  }
+  [data-theme="Light"] {
+    background-image: url("./images/bg-mobile-light.jpg");
+  }
+
+  .container {
+    max-width: 360px;
+  }
+
+  .header {
+    gap: 9rem;
+  }
+
+  .todo-tools {
+    position: relative;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .todo-three-container {
+    position: absolute;
+    top: 26px;
+    right: -182px;
+    gap: 1rem;
+    padding: 1.2rem 5.83rem;
+
+    color: hsl(234, 11%, 52%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 0.8rem;
+  }
+
+  .todo-tools-container {
+    font-size: 0.7rem;
+    gap: 2.5rem;
+  }
+
+  [data-theme="Dark"] .todo-three-container {
+    background-color: hsl(235, 24%, 19%);
+  }
+  [data-theme="Light"] .todo-three-containerr {
+    background-color: white;
+    border-bottom: 1px solid hsl(233, 11%, 84%);
+  }
+
+  .todo-list-text {
+    font-size: 0.8rem;
+  }
+
+  .todo-input {
+    font-size: 0.8rem;
+  }
+  .headline {
+    font-size: 1.8rem;
+  }
+}

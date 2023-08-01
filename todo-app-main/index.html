@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body class="" data-theme="Dark" data-theme="Light">
+    <main>
+      <div></div>
+
+      <div class="container">
+        <div class="header">
+          <h1 class="headline">TODO</h1>
+          <button class="toggle-mode mobile">
+            <img
+              src="./images/icon-sun.svg"
+              alt="sun icon toggle switcher"
+              class="toggle-img"
+            />
+          </button>
+        </div>
+        <div class="todo-section">
+          <div class="todo-circle"></div>
+          <label for="todo-input"> </label>
+          <input
+            type="text"
+            class="todo-input"
+            name="todo-input"
+            placeholder="Create a new todo..."
+          />
+        </div>
+        <div class="todo-list">
+          <ul class="todo-list-select"></ul>
+        </div>
+        <div class="todo-tools-container">
+          <div class="items-left">
+            <span class="items-count">0</span>
+            <p>items left</p>
+          </div>
+          <div class="todo-tools">
+            <div class="todo-three-container">
+              <div class="todo-tools-all">All</div>
+              <div class="todo-tools-active">Active</div>
+              <div class="todo-tools-completed">Completed</div>
+            </div>
+          </div>
+          <div class="todo-tools-clear">Clear Completed</div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
